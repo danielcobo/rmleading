@@ -1,7 +1,7 @@
 {
   "name": "rmleading",
   "version": "1.0.0",
-  "description": "Removes leading string",
+  "description": "Removes dynamic leading substring",
   "main": "index.js",
   "directories": {
     "test": "test"
