@@ -31,7 +31,7 @@ test('rmLeading()', function(assert){
 				);
 	assert.equal(
 				rmLeading('///', slash), '',
-				'Removes all trailing substrings'
+				'Removes all leading substrings'
 				);
 	assert.equal(
 				rmLeading('hello/world', slash),
