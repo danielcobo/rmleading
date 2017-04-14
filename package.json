@@ -1,0 +1,32 @@
+{
+  "name": "rmleading",
+  "version": "1.0.0",
+  "description": "Removes leading string",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "\"tape test/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcobo/rmleading.git"
+  },
+  "keywords": [
+    "string",
+    "prepend",
+    "leading",
+    "remove",
+    "trim"
+  ],
+  "author": "TidySource (Daniel Cobo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielcobo/rmleading/issues"
+  },
+  "homepage": "https://github.com/danielcobo/rmleading#readme",
+  "devDependencies": {
+    "tidytest": "^1.0.1"
+  }
+}
