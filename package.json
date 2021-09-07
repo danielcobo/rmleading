@@ -3,11 +3,9 @@
   "version": "1.0.1",
   "description": "Removes dynamic leading substring",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "jest --collectCoverage",
+    "mutation": "npx stryker run"
   },
   "repository": {
     "type": "git",
@@ -20,13 +18,20 @@
     "remove",
     "trim"
   ],
-  "author": "TidySource (Daniel Cobo)",
+  "author": "Daniel Cobo",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danielcobo/rmleading/issues"
   },
   "homepage": "https://github.com/danielcobo/rmleading#readme",
   "devDependencies": {
-    "tidytest": "^1.0.1"
-  }
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@stryker-mutator/core": "^5.3.0",
+    "@stryker-mutator/jest-runner": "^5.3.0",
+    "jest": "^27.0.6",
+    "rollup": "^2.56.3",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {}
 }
