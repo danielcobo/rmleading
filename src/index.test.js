@@ -10,7 +10,7 @@ test('Removes multiple leading substrings', function () {
 });
 
 test('Removes all leading substrings', function () {
-  expect(rmLeading('///', slash)).toStrictEqual('');
+  expect(rmLeading('hellohelloworld', 'hello')).toStrictEqual('world');
 });
 
 test('Is OK with nothing to remove', function () {

@@ -7,17 +7,21 @@
  * @returns {string} - input string without the leading substring
  */
 module.exports = function rmLeading(str, substr, flag) {
-  let regex;
   if (typeof substr !== 'string') {
     throw new TypeError(
-      'substr argument must be a string, received: ' + typeof substr
+      'Substring argument must be a string, instead received: ' + typeof substr
     );
   }
-  const pattern = '^' + '\\' + substr.split('').join('\\') + '+';
-  if (typeof flag === 'undefined') {
-    regex = RegExp(pattern);
-  } else {
-    regex = RegExp(pattern, flag);
+
+  let input = str;
+  let sub = substr;
+  if (flag) {
+    input = str.toLocaleLowerCase();
+    sub = substr.toLocaleLowerCase();
   }
-  return str.replace(regex, '');
+  while (input.slice(0, sub.length) === sub) {
+    input = input.slice(sub.length);
+  }
+
+  return input;
 };
