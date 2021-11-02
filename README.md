@@ -15,8 +15,9 @@ Removes dynamic leading substring
 
 ## ✨ Benefits
 
-- [x] Improved readability
-- [x] Simplification for the regex shy
+- [x] Match user input strings (unknown at time of coding)
+- [x] Avoid issues with special chars
+- [x] Improve readability compared to regex
 
 ## 🎒 Requierments
 
