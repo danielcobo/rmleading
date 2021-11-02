@@ -1,6 +1,6 @@
 {
  "name": "@danielcobo/rmleading",
- "version": "1.0.3",
+ "version": "1.0.4",
  "description": "Removes dynamic leading substring",
  "main": "./src/index.js",
  "scripts": {
